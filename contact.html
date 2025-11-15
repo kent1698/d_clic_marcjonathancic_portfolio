@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="skills.html">Compétences</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h1>Contactez-moi</h1>
+      <p>Si vous souhaitez me contacter, veuillez remplir le formulaire ci-dessous :</p>
+
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Nom complet :</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom complet">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Adresse e-mail :</label>
+          <input type="email" id="email" name="email" placeholder="exemple@mail.com">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Sujet :</label>
+          <input type="text" id="subject" name="subject" placeholder="Sujet de votre message">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+
+      <p id="responseMessage" class="response"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Marc Jonathan Ciceron - Tous droits réservés</p>
+  </footer>
+
+  <!-- Lien vers le script JS externe -->
+  <script src="contact.js"></script>
+</body>
+</html>
